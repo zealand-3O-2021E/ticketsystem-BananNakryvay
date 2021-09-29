@@ -6,17 +6,16 @@ using System.Threading.Tasks;
 
 namespace ClassLibraryTicketSystem
 {
-    public class Car
+    public class Car:Vehicle
     {
 
-        public string Licenseplate { get; set; }
-        public DateTime Date { get; set; }
+      
 
         /// <summary>
         /// Return the price of cars
         /// </summary>
         /// <returns> 240 </returns>
-        public double Price()
+        public override double Price()
         {
             return 240;
         }
@@ -24,7 +23,7 @@ namespace ClassLibraryTicketSystem
         ///  Return the vehicle type of cars
         /// </summary>
         /// <returns> return Car </returns>
-        public string VehicleType()
+        public override string VehicleType()
         {
             return "Car";
         }
