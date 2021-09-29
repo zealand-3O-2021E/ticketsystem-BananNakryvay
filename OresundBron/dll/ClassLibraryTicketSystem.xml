@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClassLibraryTicketSystem</name>
+    </assembly>
+    <members>
+        <member name="M:ClassLibraryTicketSystem.Car.Price">
+            <summary>
+            Return the price of cars
+            </summary>
+            <returns> 240 </returns>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.Car.VehicleType">
+            <summary>
+             Return the vehicle type of cars
+            </summary>
+            <returns> return Car </returns>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.MC.Price">
+            <summary>
+            Return the price of motorcycle
+            </summary>
+            <returns> 125 </returns>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.MC.VehicleType">
+            <summary>
+             Return the vehicle type of motorcycles
+            </summary>
+            <returns> return MC </returns>
+        </member>
+    </members>
+</doc>

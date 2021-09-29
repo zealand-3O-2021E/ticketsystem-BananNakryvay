@@ -1,25 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ClassLibraryTicketSystem;
+using System;
 
-namespace ClassLibraryTicketSystem
+namespace OresundBron
 {
-    public class Car : Vehicle
+    public class OresundBronCar : Vehicle
     {
-
-      
-
+        
         /// <summary>
         /// Return the price of cars
         /// </summary>
-        /// <returns> 240 </returns>
+        /// <returns> 410 </returns>
         public override double Price()
         {
+            //if Brobizz - 161
             if (Brobizz)
-                return 240 * 0.95;
-            return 240;
+                return 161;
+            return 410;
         }
         /// <summary>
         ///  Return the vehicle type of cars
@@ -27,9 +23,8 @@ namespace ClassLibraryTicketSystem
         /// <returns> return Car </returns>
         public override string VehicleType()
         {
-            return "Car";
+            return "Oresund Car";
         }
-
 
     }
 }
