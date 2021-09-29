@@ -1,5 +1,6 @@
 using ClassLibraryTicketSystem;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
 namespace ClassLibraryTicketSystem.Tests
 {
@@ -27,5 +28,24 @@ namespace ClassLibraryTicketSystem.Tests
             //Assert
             Assert.AreEqual(expect, car.VehicleType());
         }
+        [TestMethod()]
+        public void LicensePlateTest()
+        {
+            Car car = new Car();
+
+            //Act  
+            car.Licenseplate = "1234567";
+            var expect = 7;
+            //Assert
+            Assert.AreEqual(expect, car.Licenseplate.Length);
+        }
+        [TestMethod()]
+        public void LicensePlateTestExeption()
+        {
+            Car car = new Car();
+            Assert.ThrowsException<ArgumentOutOfRangeException>(() => car.Licenseplate = "12345678");
+        }
+
+
     }
 }

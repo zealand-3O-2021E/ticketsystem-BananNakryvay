@@ -32,5 +32,23 @@ namespace ClassLibraryTicketSystem.Tests
             //Assert
             Assert.AreEqual(expect, mc.VehicleType());
         }
+
+        [TestMethod()]
+        public void LicensePlateTest()
+        {
+            MC mc = new MC();
+
+            //Act  
+            mc.Licenseplate = "1234567";
+            var expect = 7;
+            //Assert
+            Assert.AreEqual(expect, mc.Licenseplate.Length);
+        }
+        [TestMethod()]
+        public void LicensePlateTestExeption()
+        {
+            MC mc = new MC();
+            Assert.ThrowsException<ArgumentOutOfRangeException>(() => mc.Licenseplate = "12345678");
+        }
     }
 }
