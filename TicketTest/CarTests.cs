@@ -1,3 +1,4 @@
+using StoreBaeltTicketLibrary;
 using ClassLibraryTicketSystem;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
@@ -58,5 +59,7 @@ namespace ClassLibraryTicketSystem.Tests
             //Assert
             Assert.AreEqual(expect, car.Price(), 0.5d);
         }
+
+      
     }
 }
