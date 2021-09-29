@@ -17,6 +17,8 @@ namespace ClassLibraryTicketSystem
         /// <returns> 240 </returns>
         public override double Price()
         {
+            if (Brobizz)
+                return 240 * 0.95;
             return 240;
         }
         /// <summary>

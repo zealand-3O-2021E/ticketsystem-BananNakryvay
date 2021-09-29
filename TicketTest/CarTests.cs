@@ -40,12 +40,23 @@ namespace ClassLibraryTicketSystem.Tests
             Assert.AreEqual(expect, car.Licenseplate.Length);
         }
         [TestMethod()]
+        [ExpectedException(typeof(ArgumentOutOfRangeException),"License Plate should be less than 7 chars")]
         public void LicensePlateTestExeption()
         {
             Car car = new Car();
-            Assert.ThrowsException<ArgumentOutOfRangeException>(() => car.Licenseplate = "12345678");
+            car.Licenseplate = "12345678";
         }
 
-
+        [TestMethod()]
+        public void PriceTestBrobizz()
+        {
+            //Arrange  
+            Car car = new Car();
+            //Act  
+            car.Brobizz = true;
+            var expect = 228;
+            //Assert
+            Assert.AreEqual(expect, car.Price(), 0.5d);
+        }
     }
 }
